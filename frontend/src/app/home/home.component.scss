@@ -1,0 +1,135 @@
+.content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    display: flex;
+    text-align: center;
+}
+
+.content-width {
+    width: 768px;
+}
+
+.section-1 {
+    display: flex;
+    padding: 112px 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.bg-section {
+    background: url('../../assets/bg_section.png');
+    background-size: cover;
+}
+
+.section-1 .content .description {
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    word-wrap: break-word;
+}
+
+.section-2 {
+    @extend .section-1;
+}
+
+.section-2 .icon {
+    width: 96px;
+    height: 96px;
+}
+
+
+
+.section-2 .content .description {
+    color: black;
+    font-size: 24px;
+    font-family: Nunito;
+    font-weight: 400;
+    line-height: 36px;
+    word-wrap: break-word
+}
+
+._h1 {
+    align-self: stretch;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 2px 2px 0px #896AF9;
+    font-family: Nunito;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%;
+    word-wrap: break-word;
+}
+
+._h2 {
+    color: black;
+    font-size: 48px;
+    font-family: Nunito;
+    font-weight: 700;
+    line-height: 57.60px;
+    word-wrap: break-word;
+    text-shadow: none;
+}
+
+._h4 {
+    color: black;
+    font-size: 24px;
+    font-family: Nunito;
+    font-weight: 700;
+    line-height: 31.20px;
+    word-wrap: break-word
+}
+
+._h3 {
+    color: black;
+    font-size: 32px;
+    font-family: Nunito;
+    font-weight: 700;
+    line-height: 41.60px;
+    word-wrap: break-word
+}
+
+._h5 {
+    // Discover
+    color: black;
+    font-size: 16px;
+    font-family: Nunito;
+    font-weight: 600;
+    line-height: 24px;
+    word-wrap: break-word
+}
+
+.detail {
+    color: var(--Black, #000);
+    text-align: center;
+    font-family: Nunito;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@media only screen and (max-width: 576px) {
+    .content-width {
+        width: auto;
+    }
+
+    .section-1 {
+        padding: 56px 16px;
+    }
+
+    .section-2 {
+        padding: 56px 16px;
+    }
+
+    .bg-section {
+        background: none;
+    }
+}

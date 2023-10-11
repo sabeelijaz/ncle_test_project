@@ -1,0 +1,11 @@
+nav {
+    height: 72px;
+    padding: 0px 64px;
+}
+
+@media only screen and (max-width: 576px) {
+    nav {
+        height: 72px;
+        padding: 0px 16px;
+    }
+}

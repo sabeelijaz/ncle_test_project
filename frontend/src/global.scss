@@ -1,26 +1,39 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-/* Core CSS required for Ionic components to work properly */
-@import "@ionic/angular/css/core.css";
+$primary: #AB95F9;
+$secondary: #FFF9E6;
+$font-family-base: 'Nunito', sans-serif;
 
-/* Basic CSS for apps built with Ionic */
-@import "@ionic/angular/css/normalize.css";
-@import "@ionic/angular/css/structure.css";
-@import "@ionic/angular/css/typography.css";
-@import '@ionic/angular/css/display.css';
+$theme-colors: map-merge($theme-colors,
+        ("primary": $primary,
+            "secondary" : $secondary ));
 
-/* Optional CSS utils that can be commented out */
-@import "@ionic/angular/css/padding.css";
-@import "@ionic/angular/css/float-elements.css";
-@import "@ionic/angular/css/text-alignment.css";
-@import "@ionic/angular/css/text-transformation.css";
-@import "@ionic/angular/css/flex-utils.css";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.btn-subscribe {
+    @extend .btn;
+    cursor: pointer !important;
+    padding: 15px 27px;
+    border-radius: 24px;
+    border-color: #896AF9;
+    background: var(--White, #FFF);
+    box-shadow: 4px 4px 0px -1px #896AF9;
+    color: #896AF9;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 38.4px;
+}
+
+.btn-subscribe:hover {
+    border-color: #896AF9;
+    background: var(--White, #e0e0e0);
+    box-shadow: 4px 4px 0px -1px #896AF9;
+    color: #896AF9;
+
+}
