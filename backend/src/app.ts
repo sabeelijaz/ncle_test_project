@@ -5,9 +5,8 @@ import path from "path";
 
 // Routes
 import TaskRouter from "./routes/task.route";
-console.log(new Date());
 
-const app = express();
+const app: express.Application = express();
 
 app.use(logger('dev'));
 app.use(express.json());

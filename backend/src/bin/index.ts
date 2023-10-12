@@ -19,7 +19,9 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+server.listen(port, () => {
+    console.log("Server started at:", new Date());
+});
 server.on('error', onError);
 server.on('listening', onListening);
 

@@ -1,8 +1,9 @@
 import Task from "../interfaces/Task";
+import TaskStore from "../store";
 
 class TaskService {
 
-    store: Array<Task> = [];
+    store = TaskStore.getTaskStore();
 
     createTask(task: Task): number {
         const lastItem = this.store.at(-1);
